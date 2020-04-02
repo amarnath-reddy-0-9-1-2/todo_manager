@@ -30,7 +30,7 @@ class UsersController < ApplicationController
     if user.user_password == check2
       render plain: "Your login is successful!! Welcome #{user.user_name}"
     else
-      render plain: "incorrect credentials!! Try again"
+      render plain: "Incorrect credentials!! Try again"
     end
   end
 end
