@@ -3,7 +3,6 @@ main {
   max-width: 460px;
   margin:0  auto;
   margin-top: 60px;
-
 }
 
 .TodoPage-title {
@@ -12,64 +11,64 @@ main {
   color: #453C52;
   font-weight: 600;
   margin-bottom: 12px;
-
 }
+
 .AddTodo {
   display: flex;
   height: 32px;
   align-items: stretch;
   margin-bottom: 24px;
-
 }
-.AddTodo-text{
+
+.AddTodo-text {
   padding: 6px 12px;
   font-size: 14px;
   color: #453C52;
   margin-right: 10px;
   border-radius: 4px;
   border: 1px solid #BFBBCC;
-
 }
-.AddTodo-date{
+
+.AddTodo-date {
   padding: 6px;
   font-size: 14px;
   color: #453C52;
   margin-right: 10px;
   border-radius: 4px;
   border: 1px solid #BFBBCC;
-
 }
-.AddTodo-button{
+
+.AddTodo-button {
   font-size: 14px;
   color: white;
   background-color: #48bb78;
   border: transparent;
   padding: 6px 22px;
   border-radius: 4px;
-
 }
-.TodoSection{
+
+.TodoSection {
   margin-bottom: 20px;
-
 }
-.TodoSectionTitle{
+
+.TodoSectionTitle {
   display: flex;
   color: #453C52;
   align-items: center;
   margin-bottom: 8px;
-
 }
-.TodoSectionTitle-text{
+
+.TodoSectionTitle-text {
   font-size: 14px;
   font-weight: 600;
   margin-right: 8px;
   line-height: 1.4;
-
 }
-.TodoSectionTitle-remainingcount{
 
+.TodoSectionTitle-remainingcount {
   font-size: 12px;
 }
+
 .TodoItem{
   font-size: 14px;
   color: #453C52;
@@ -78,11 +77,16 @@ main {
   align-items: center;
   display: flex;
 }
+
 .TodoItem-Checkbox {
   width: 16px;
   height: 16px;
 }
 
+.TodoItem-overdueLabel {
+  margin-left: 12px;
+  color: red;
+}
 
 ul {
   list-style: none;
@@ -95,13 +99,16 @@ article {
 .TodoItem:hover {
   background-color: #f1f1f7;
 }
+
 .TodoItem-delete {
   visibility: hidden;
   margin-left: 8px;
 }
+
 .TodoItem:hover .TodoItem-delete {
   visibility: visible;
 }
+
 .TodoItem-duedate {
   color: rgb(103, 89, 123);
   margin-left: 10px;
