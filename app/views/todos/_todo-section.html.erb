@@ -6,11 +6,11 @@
         <ul>
           <% todos.all.each do |todo|%>
               <li class="TodoItem">
-              <%= form_with(url: "/todos/#{todo.id}", method: "put") do %>
+              <%= form_with(url: "/todos/#{todo.id}", method: "put",name: "check") do %>
                 <input class="TodoItem-checkbox"
                  type="checkbox"
                  name="completed"
-                 <%= todo.completed ? "checked" : ""%>
+                 value: <%= todo.completed ? "checked" : ""%>
                   onclick="this.form.submit()"
                  />
               <%end%>
@@ -20,7 +20,7 @@
                   <%end%>
                   <a class="TodoItem-delete" "href=" javascript:void(0)">
                    <%= form_with(url: "/todos/#{todo.id}", method: "delete") do %>
-                    <input type='image' src=<%=asset_path("image.PNG")%> height="15" width="15">
+                      <%=image_submit_tag("trash-can-outline.svg")%>
                    <%end%>
                   </a>
             </li>
