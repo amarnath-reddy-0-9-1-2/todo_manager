@@ -4,6 +4,13 @@ main {
   margin:0  auto;
   margin-top: 60px;
 }
+ul {
+  list-style: none;
+}
+
+article {
+  display: block;
+}
 
 .TodoPage-title {
   font-size: 20px;
@@ -78,23 +85,11 @@ main {
   display: flex;
 }
 
-.TodoItem-Checkbox {
+.TodoItem-checkbox {
   width: 16px;
   height: 16px;
 }
 
-.TodoItem-overdueLabel {
-  margin-left: 12px;
-  color: red;
-}
-
-ul {
-  list-style: none;
-}
-
-article {
-  display: block;
-}
 
 .TodoItem:hover {
   background-color: #F1F1F7;
