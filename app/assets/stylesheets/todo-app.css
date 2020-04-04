@@ -103,10 +103,12 @@ article {
 .TodoItem-delete {
   visibility: hidden;
   margin-left: 8px;
+
 }
 
 .TodoItem:hover .TodoItem-delete {
   visibility: visible;
+
 }
 
 .TodoItem-duedate {
