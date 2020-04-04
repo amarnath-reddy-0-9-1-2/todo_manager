@@ -35,5 +35,7 @@ class Todo < ActiveRecord::Base
     all.where(completed: true)
   end
 
-
+  def self.notcompleted
+    all.where(completed: false)
+  end
 end
