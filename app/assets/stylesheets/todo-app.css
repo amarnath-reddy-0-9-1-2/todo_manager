@@ -114,3 +114,7 @@ article {
   margin-left: 10px;
   font-size: 12px;
 }
+
+.TodoItemText-striked {
+  text-decoration: line-through;
+}
