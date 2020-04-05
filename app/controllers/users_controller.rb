@@ -27,7 +27,9 @@ class UsersController < ApplicationController
     check1 = params[:user_email]
     check2 = params[:user_password]
     user = User.find { |u| u.user_email == check1 }
-    if user.user_password == check2
+    if user == nil
+      render plain: "Incorrect credentials!! Try again"
+    elsif user.user_password == check2
       render plain: "Your login is successful!! Welcome #{user.user_name}"
     else
       render plain: "Incorrect credentials!! Try again"
