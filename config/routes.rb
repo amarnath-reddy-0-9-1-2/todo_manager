@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   #post "todos", to: "todos#create"
   #get "todos/:id", to: "todos#show"
   get "/" => "home#index"
-  get "/signin" => "session#new", as: :new_sessions
+  get "/signin" => "sessions#new", as: :new_sessions
   post "/signin" => "sessions#create", as: :sessions
   resources :todos
   resources :users
