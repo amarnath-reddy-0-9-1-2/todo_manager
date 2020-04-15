@@ -12,9 +12,10 @@
   <body>
     <% if @current_user %>
      <p class="UserHeader">
-      <%= @current_user.first_name %>
+      TodoManager
       <%= link_to "Sign-Out", destroy_session_path, method: "delete" %>
      </p>
+     <hr>
     <% end %>
     <% if flash[:error] %>
     <p class="Flash-error">
